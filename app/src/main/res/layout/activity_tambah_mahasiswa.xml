@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tambahMahasiswa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahMahasiswaActivity"
+    android:fillViewport="true"
+    android:background="@drawable/gradient_a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/judul"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            style="@style/textView1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nim"
+            style="@style/textView1"/>
+
+        <EditText
+            android:id="@+id/nimEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Hanya angka yang bisa di inputkan"
+            android:hint="@string/hintnim"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColorHint="#cccccc"
+            tools:ignore="VisualLintTextFieldSize"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama"
+            style="@style/textView1"/>
+
+        <EditText
+            android:id="@+id/namaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Wajib di isikan"
+            android:hint="@string/hintname"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#cccccc"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jk"
+            style="@style/textView1"/>
+
+        <Spinner
+            android:id="@+id/jenisKelaminSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/jenisKelaminArray"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tempat_lahir"
+            style="@style/textView1"/>
+
+        <EditText
+            android:id="@+id/tempatLahirEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Tampat Anda dilahirkan"
+            android:hint="@string/tempat_lahir_hint"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#cccccc"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tanggal_lahir"
+            style="@style/textView1"/>
+
+        <EditText
+            android:id="@+id/tanggalLahirEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Tnaggal anda dilahirkan"
+            android:hint="@string/tanggal_lahir_hint"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textColorHint="#cccccc"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alamat"
+            style="@style/textView1"/>
+
+        <EditText
+            android:id="@+id/alamatEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Alamat rumah anda yang sekarang"
+            android:hint="@string/alamat_hint"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#cccccc"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jp"
+            style="@style/textView1"/>
+
+        <Spinner
+            android:id="@+id/jpSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/jpArray"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_nikah"
+            style="@style/textView1"/>
+
+        <Spinner
+            android:id="@+id/statusNikahSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/statusNikahArray"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tahun_masuk"
+            style="@style/textView1"/>
+
+        <EditText
+            android:id="@+id/tahunMasukEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Tahun anda mendaftarkan kuliah"
+            android:hint="@string/tahun_masuk_hint"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColorHint="#cccccc"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/simpan"
+            android:id="@+id/saveButton"
+            tools:ignore="VisualLintButtonSize"
+            android:background="@drawable/rounded_edittext"/>
+    </LinearLayout>
+</ScrollView>

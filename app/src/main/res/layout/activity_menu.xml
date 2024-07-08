@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:columnCount="1"
+    android:background="@drawable/gradient_a">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:drawableEnd="@drawable/img_dollar_128"
+        android:textColor="#fff"
+        android:text="Forex"
+        android:id="@+id/tampilForexButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/student"
+        android:textColor="#fff"
+        android:text="Master Mahasiswa"
+        android:id="@+id/tampilMahasiswaButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:drawableEnd="@drawable/img_weather_lightning_128"
+        android:textColor="#fff"
+        android:text="Cuaca"
+        android:id="@+id/tampilCuacaButton"/>
+</GridLayout>

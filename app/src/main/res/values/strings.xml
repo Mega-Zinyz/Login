@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="judul">Mahasiswa Baru</string>
+    <string name="nim">NIM</string>
+    <string name="hintnim">Nomor Induk Mahasiswa Anda</string>
+    <string name="nama">Nama</string>
+    <string name="hintname">Nama Lengkap Anda</string>
+    <string name="jk">Jenis Kelamin</string>
+    <string name="tempat_lahir">Tempat Lahir</string>
+    <string name="tempat_lahir_hint">Tempat anda dilahirkan</string>
+    <string name="tanggal_lahir">Tanggal Lahir (yyyy-mm-dd)</string>
+    <string name="tanggal_lahir_hint">Tanggal anda dilahirkan</string>
+    <string name="alamat">Alamat</string>
+    <string name="alamat_hint">Alamat tempat tinggal anda sekarang</string>
+    <string name="jp">Jurusan / Prodi</string>
+    <string name="status_nikah">Status Pernikahan</string>
+    <string name="tahun_masuk">Tahun Masuk</string>
+    <string name="tahun_masuk_hint">Tahun anda mendaftarkan diri anda di kampus</string>
+    <string name="simpan">Simpan</string>
+    <string name="searchbar_hint">Cari</string>
+    <string name="total_record">Total Record :</string>
+    <string name="cuaca">(Cuaca)</string>
+    <string name="deskripsi">(Deskripsi)</string>
+    <string name="tgl_waktu">(Tgl / Waktu)</string>
+    <string name="suhu">(Suhu)</string>
+
+    <string name="tanggal_dan_waktu">Tanggal dan Waktu</string>
+    <string name="forex">Forex</string>
+
+    <string-array name="jenisKelaminArray">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <string-array name="jpArray">
+        <item>SI/SI</item>
+        <item>TI/TI</item>
+    </string-array>
+    <string-array name="statusNikahArray">
+        <item>Belum Menikah</item>
+        <item>Menikah</item>
+        <item>Duda</item>
+        <item>Janda</item>
+    </string-array>
+</resources>

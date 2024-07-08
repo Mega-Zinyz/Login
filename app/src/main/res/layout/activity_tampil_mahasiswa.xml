@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tampil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TampilMahasiswaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/cardview_dark_background">
+            <EditText
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:id="@+id/txtSearch"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/cardview_light_background"
+                android:inputType="textUri"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_a"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/cardview_dark_background">
+            <TextView
+                android:id="@+id/txtMahasiswaCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Mahasiswa : "
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="18sp"
+                android:autoSizeStepGranularity="1sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@android:drawable/ic_input_add"
+        android:id="@+id/addButton"
+        android:contentDescription="Record Baru"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/baseline_refresh_24"
+        android:id="@+id/refreshButton"
+        android:contentDescription="Refresh Button"/>
+
+</FrameLayout>
